@@ -1,0 +1,8 @@
+api:
+  dashboard: true
+  insecure: true # should be false in prod
+providers:
+  kubernetesIngress:
+     enabled: false
+  kubernetesGateway:
+     enabled: true
