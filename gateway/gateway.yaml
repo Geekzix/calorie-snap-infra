@@ -6,7 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/part-of: banking-platform
 spec:
-  gatewayClassName: traefik-banking
+  gatewayClassName: traefik
   listeners:
     - name: http
       protocol: HTTP

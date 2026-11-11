@@ -1,0 +1,6 @@
+server:
+  insecure: true
+  extraArgs:
+    - --insecure
+  service:
+    type: ClusterIP

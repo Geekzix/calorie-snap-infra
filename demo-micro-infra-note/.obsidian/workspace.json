@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documentation/Gateway API.md",
+                "file": "Phases plans.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gateway API"
+              "title": "Phases plans"
             }
           }
         ],
@@ -249,9 +249,9 @@
   },
   "active": "4228985a52f73804",
   "lastOpenFiles": [
+    "Documentation/Gateway API.md",
     "Pasted image 20261111002741.png",
     "Documentation/Resources website.md",
-    "Documentation/Gateway API.md",
     "Phases plans.md",
     "helm/traefik",
     "helm",
