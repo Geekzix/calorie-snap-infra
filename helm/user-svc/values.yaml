@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: myintmyatdev/caloire-snap-user-svc
   pullPolicy: IfNotPresent
-  tag: "a129b7580f59c066d5086790fa73b417106ee3ab"
+  tag: "07f8c0a1e2b00347c69815100d9a4f996e646a48"
 
 nameOverride: ""
 fullnameOverride: ""
