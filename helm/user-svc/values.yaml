@@ -34,7 +34,7 @@ gateway:
   namespace: traefik
 
 ingress:
-  host: calorie-snap-api.nyinyimyintmyat.com
+  host: calorie-snap-api.localhost
 
 resources:
   limits:
