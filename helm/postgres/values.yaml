@@ -1,0 +1,23 @@
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+settings:
+  existingSecret: postgres-auth
+  superuser:
+    secretKey: superuser
+  superuserPassword:
+    secretKey: superuser-password
+
+  storage:
+  requestedSize: 5Gi
+  className: local-path
+  accessModes:
+    - ReadWriteOnce
+
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Retain
+    whenScaled: Retain

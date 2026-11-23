@@ -1,0 +1,44 @@
+image:
+  registry: docker.io
+  repository: redis
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  serverPort: 6379
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+# Use a StatefulSet for standalone Redis
+useDeploymentWhenNonHA: false
+
+haMode:
+  enabled: false
+
+# Mount our ACL file from the Kubernetes Secret
+extraRedisSecrets:
+  - name: redis-acl
+    defaultMode: 0440
+    mountPath: /etc/redis-acl
+
+# Tell Redis where to find the ACL file
+redisConfig: |
+  aclfile /etc/redis-acl/users.acl
+  appendonly yes
+
+storage:
+  requestedSize: 2Gi
+  className: local-path
+  accessModes:
+    - ReadWriteOnce
+
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Retain
+    whenScaled: Retain
+
