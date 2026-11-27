@@ -5,4 +5,5 @@
 5. [Deploying PostgreSQL on Kubernetes with Helm](https://oneuptime.com/blog/post/2026-01-17-helm-postgresql-kubernetes-deployment/view)
 6. [Postgres Helm Chart (Use groundhog2k instead of Bitnami)](https://github.com/groundhog2k/helm-charts)
 7. [SIGKILL vs SIGTERM](https://www.suse.com/blog/observability-sigkill-vs-sigterm-a-developers-guide-to-process-termination/)
-8. [Redis Operator 10138eb8134857ab6b00ed81bf662a5206a195655829aebec683b37e39aa509b](https://ot-container-kit.github.io/redis-operator/)
+8. [Redis Operator](https://ot-container-kit.github.io/redis-operator/)
+9. [Spring-Boot Concurrency Control](https://medium.com/@saadmeddiche2004201/spring-boot-concurrency-control-a2a76c2a859e)
